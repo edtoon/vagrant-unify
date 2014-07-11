@@ -25,5 +25,7 @@ end
 ## Syncing folders
 
 Run `vagrant unify-pull` to rsync files from the guest to your local host.
+```
 Run `vagrant unify-push` to rsync files from your local host to the guest.
+```
 Run `vagrant unify-sync` to Unison files between your local host and the guest.
