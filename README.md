@@ -1,11 +1,15 @@
 # Vagrant Unify Plugin
 
 This is a [Vagrant](http://www.vagrantup.com) 1.5+ plugin liberally copy-and-paste'd from
-the vagrant-unison plugin and Vagrant's own rsync plugin. It allows you to configure a
-set of folders to synchronize with Unison or RSync but without the on-startup and
-automatic sync features of Vagrant's synchronized folders and the Unison plugin.
+the [vagrant-unison](https://github.com/mrdavidlaing/vagrant-unison) plugin and
+Vagrant's own rsync plugin. It allows you to configure a set of folders to synchronize
+with Unison or RSync but without the on-startup and automatic sync features of Vagrant's
+synchronized folders and the Unison plugin.
 
-**NOTE:** This plugin requires Vagrant 1.5+
+**NOTE:** This plugin requires Vagrant 1.5+.
+
+**NOTE:** In order to use the unify-sync command the [Unison](http://www.cis.upenn.edu/~bcpierce/unison/)
+application must be installed on both the host and guest machines and available on the PATH as `unison`.
 
 ## Usage
 
