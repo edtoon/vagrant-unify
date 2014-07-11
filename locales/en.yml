@@ -1,0 +1,50 @@
+en:
+  vagrant_unify:
+
+    pull:
+      synopsis: |-
+        rsyncs guest files to host
+      message: |-
+        Unify - pulling [guest]::%{guestpath} --> [host]::%{hostpath}
+
+    push:
+      synopsis: |-
+        rsyncs host files to guest
+      message: |-
+        Unify - pushing [host]::%{hostpath} --> [guest]::%{guestpath}
+
+    sync:
+      synopsis: |-
+        syncs files between host and guest via Unison
+      message: |-
+        Unify - syncing [host]::%{hostpath} <-> [guest]::%{guestpath}
+
+    excludes: |-
+      Excluding: %{excludes}
+
+    unison:
+      success_0: |-
+        Unison completed succesfully
+      success_1: |-
+        Unison completed - all file transfers were successful; some files were skipped
+      success_2: |-
+        Unison completed - non-fatal failures during file transfer
+
+    config:
+      local_path_required: |-
+        Local path is required
+      remote_path_required: |-
+        Remote path is required
+
+    errors:
+      config_error: |-
+        Error in unify configuration: %{err}
+      unify_error: |-
+        There was an error when attemping to unify folders.
+        Please inspect the error message below for more info.
+
+        Host path: %{hostpath}
+        Guest path: %{guestpath}
+        Error: %{stderr}
+        Full command causing error: 
+        %{command}
